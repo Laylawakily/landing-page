@@ -31,7 +31,7 @@ export default function HeaderMain() {
         />
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-12">
+        <nav className="lg:flex hidden items-center gap-12">
           {headerItemLink?.map((item, index) => (
             <RenderLink key={index} item={item} />
           ))}
@@ -40,8 +40,8 @@ export default function HeaderMain() {
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <nav className="md:hidden absolute top-28 left-0 right-0 bg-charcoalBlack z-50">
-            <ul className="flex flex-col   items-center gap-4 py-4">
+          <nav className="absolute top-28 left-0 right-0 bg-charcoalBlack z-50">
+            <ul className="flex flex-col items-center gap-4 py-4">
               {headerItemLink?.map((item, index) => (
                 <RenderLink key={index} item={item} />
               ))}
@@ -51,8 +51,8 @@ export default function HeaderMain() {
         
 
         {/* Right Section (Button and Icons) */}
-        <div className="flex items-center gap-8 mt-4 md:mt-0">
-          <button className="px-5 py-3 bg-gradient-custom rounded-full text-black text-sm flex gap-2 items-center">
+        <div className="flex items-center md:gap-8 gap-2 mt-4 md:mt-0">
+          <button className="md:px-5 px-3 md:py-3 py-2 bg-gradient-custom rounded-full text-black md:text-sm text-xs flex gap-2 items-center">
             Let's Chat{" "}
             <AnimatedIcon>
               {" "}

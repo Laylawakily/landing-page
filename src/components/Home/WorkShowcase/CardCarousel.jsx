@@ -68,7 +68,7 @@ export default function CardCarousel() {
               isMobile={isMobile}
             >
               {/* Cards details */}
-              <div className="flex flex-row-reverse  md:flex-col justify-between items-center">
+              <div className="flex lg:flex-row-reverse  md:flex-col justify-between items-center">
                 {index === 1 && !isMobile && (
                   <img
                     src={card.img}

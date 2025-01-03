@@ -4,7 +4,7 @@ import AccordionMain from "./AccordionMain";
 const RenderButtons = ({ item }) => {
   return (
       <button
-        className={`lgLpx-10 px-3  lg:py-3 py-1 ${item.style} bg-white rounded-full text-black text-sm`}>
+        className={`lg:px-10 px-3  lg:py-3 py-1 ${item.style} bg-white rounded-full text-black text-sm`}>
         {item.item}
       </button>
   );
